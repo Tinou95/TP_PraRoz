@@ -39,7 +39,7 @@ body{
     background: grey;
     background-position: center;        
     background-size: cover;
-    height: 100rem;
+    height: auto;
 }
 
 header{
@@ -54,13 +54,9 @@ header{
 
 
 
-.icon{
-    width: 20rem;
-    float: left;
-    height: 7rem;
-}
 
-.logo{
+
+header h2{
     color: #ff7200;
     font-size: 3.5rem;
     font-family: Arial;
@@ -101,13 +97,9 @@ nav ul li a:hover{
     color: #ff7200;
 }
 
-.search{
-    width: 3.3rem;
-    float: left;
-    margin-left: 2.7rem;
-}
 
-.srch{
+
+header input{
     font-family: 'Times New Roman';
     width: 20rem;
     height: 4rem;
@@ -149,7 +141,7 @@ nav ul li a:hover{
 }
 
 main{
-    width: 1200px;
+    width: 120rem;
     height: auto;
     margin: auto;
     color: #fff;
@@ -157,7 +149,7 @@ main{
 }
 
 main .par{
-    padding-left: 2vj;
+    padding-left: 2rem;
     padding-bottom: 2.5rem;
     font-family: Arial;
     letter-spacing: .12rem;
