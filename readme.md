@@ -7,5 +7,8 @@
 ## Css :   
         Mettre un reset;
         Mettre les valeurs en rem;
+        Pas de responsive;
+        Code non optimisé;
+        
 ## JavaScript : 
     Connection réussi / Connection échoué après validation du formulaire;
