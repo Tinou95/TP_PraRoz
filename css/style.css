@@ -37,7 +37,9 @@ button{
 
 body{
     width: 100%;
-    background-image: url("../asset/1.jpg");
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../asset/1.jpg");
+    background-blend-mode: darken;
+
     /*background-color: blue;*/
     background-position: center;        
     background-size: cover;
@@ -67,13 +69,15 @@ header h1{
 
 header nav{
     min-height: 6vh;
+    display: flex;
+    align-items: center;
 }
 
 
 header nav ul{
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 header nav ul li{
@@ -310,9 +314,10 @@ footer p{
 
 
 
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 80rem) {
 
-
+   
+    
   
 
     header nav ul li{

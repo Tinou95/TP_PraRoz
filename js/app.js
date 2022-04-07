@@ -1,26 +1,35 @@
 document.addEventListener("DOMContentLoaded", () =>{
-    const element = document.querySelector("main form .warning");
-    const email = document.querySelector(".email");
-    const password = document.querySelector(".password");
-    const submit = document.querySelector(".submit");
+
+
+    let element = document.querySelector("main form .warning");
+    let submit = document.querySelector(".submit");
 
     
-	let envoieUser = () => {
-	
-		if (!email || !password ) {
-			element.innerText = "Veuillez remplir tous les champs ";
-            sessionStorage.clear();
-		 
-		} else {
-			element.innerText = "Votre formulaire a bien été envoyé";
-			localStorage.setItem("user", email, "userpassword", password);
-			sessionStorage.setItem("user", "sessionid", "userpassword", "passwordid");
-
-		}
-	};
-    submit.addEventListener("click", e => {
+	submit.addEventListener("click", (e) => {
 		e.preventDefault();
 		envoieUser();
 	});
+
+	let envoieUser = () => {
+
+		let email = document.getElementsByTagName("input")[1].value;
+		let password = document.getElementsByTagName("input")[2].value;
+		if (!email || !password ) {
+			
+			element.innerText = "Veuillez remplir tous les champs ";
+			element.style.color = "red";
+            sessionStorage.clear();
+		 
+		} else {
+			element.innerText = "Vous êtes connecté";
+			element.style.color = "green";
+			localStorage.setItem("userEmail", email);
+            sessionStorage.setItem("userEmail", email);
+			localStorage.setItem("userPassword", password);
+            sessionStorage.setItem("userPassword", password);
+
+		}
+	};
+ 
     
 })
