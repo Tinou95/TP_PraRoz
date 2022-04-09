@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () =>{
 
 	let envoieUser = () => {
 
-		let email = document.getElementsByTagName("input")[1].value;
-		let password = document.getElementsByTagName("input")[2].value;
+		let email = document.getElementsByTagName("input")[2].value;
+		let password = document.getElementsByTagName("input")[3].value;
 		if (!email || !password ) {
 			
 			element.innerText = "Veuillez remplir tous les champs ";

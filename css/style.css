@@ -2,9 +2,8 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-
-
 }
+
 body{
     font: 1.6rem 'Roboto',sans-serif;
     margin: 0;
@@ -32,16 +31,10 @@ button{
     box-sizing: border-box;
 }
 
-
 /**/
-
 body{
     width: 100%;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../asset/1.jpg");
-    background-blend-mode: darken;
-
-    /*background-color: blue;*/
-    background-position: center;        
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.5) 50%), url(../asset/1.jpg) no-repeat center center fixed;
     background-size: cover;
     height: auto;
 }
@@ -54,18 +47,14 @@ header{
     width: 100%;
    margin: 0 auto;
     height: auto;
-    padding-bottom: 5rem;
-    
+    padding-bottom: 5rem;  
 }
-
 
 header h1{
     color: #ff7200;
     font-size: 3.5rem;
     font-family: Arial;
 }
-
-
 
 header nav{
     min-height: 6vh;
@@ -98,17 +87,19 @@ header nav ul li a:hover{
     color: #ff7200;
 }
 
-
-
-header input{
-    font-family: 'Times New Roman';
+header input:first-child{
     background: transparent;
     border: .1rem solid #ff7200;
     color: #fff;
-    border-right: none;
-    font-size: 1.6rem;
     padding: 1rem;
     border-radius: .5rem 0;
+}
+header input:nth-child(2){
+    background: transparent;
+    background-color:#ff7200 ;
+    color: #fff;
+    padding: 1rem;
+
 }
 
 header button{
@@ -130,11 +121,8 @@ header button:focus, header input:focus{
     outline: none;
 }
 
-
-
 main{
     max-width: 80%;
-    min-height: 80%;
     margin: 0 auto;
     color: #fff;
     display: flex;
@@ -145,7 +133,6 @@ main{
 
 
 main section p{
-    padding-left: 2rem;
     padding-bottom: 2.5rem;
     font-family: Arial;
     letter-spacing: .12rem;
@@ -155,8 +142,6 @@ main section p{
 main h2{
     font-family: 'Times New Roman';
     font-size: 5rem;
-    padding-left: 2rem;
-
     letter-spacing: .2rem;
 }
 
@@ -168,8 +153,7 @@ main section button{
     font-size: 1.8rem;
     border-radius: 1rem;
     cursor: pointer;
-    transition: .4s ease;
-    
+    transition: .4s ease;  
 }
 
 main section button a{
@@ -188,12 +172,11 @@ main span{
 }
 
 main form{
-    width: 25%;
-    height: 25%;
-    background: #000;
+    width: auto;
+    height: auto;
     border-radius: 1rem;
     padding: 2.5rem;
- 
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 50%,rgba(0,0,0,0.8) 50%);
 }
 
 main form h2{
@@ -247,11 +230,9 @@ main form input[type="submit"]{
     color: #fff;
     padding: 1rem;
     transition: 0.4s ease;
+    color: #fff;
 }
-main form input[type="submit"]{
-    background: #fff;
-    color: #ff7200;
-}
+
 main form input[type="submit"] a{
     text-decoration: none;
     color: #000;
@@ -281,16 +262,13 @@ form .link a{
 main ul li{
     display:inline-flex;
     justify-content:center;
-
 }
 main ul li a{
- 
     text-decoration: none;
     color: #fff;
 }
 
 main ul li ion-icon{
-
     color: #fff;
     font-size: 3rem;
     padding-left: 1.4rem;
@@ -303,22 +281,17 @@ main ul ion-icon:hover{
 
 footer{
     display: block;
+    padding: 2rem;
 }
 
 footer p{
-    margin-top: 2rem;
     color: #fff;
     text-align: center;
-
 }
-
 
 
 @media screen and (max-width: 80rem) {
 
-   
-    
-  
 
     header nav ul li{
         max-width: 90vw;
@@ -328,22 +301,13 @@ footer p{
         padding: .5rem;
         flex-wrap: wrap;
     }
-
-
     main section h2, main section span{
         font-size: 3.5rem;
     }
-     
-
-
      main form{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 100%;
         margin-top: 4rem;
     }
-
- 
     
 }
